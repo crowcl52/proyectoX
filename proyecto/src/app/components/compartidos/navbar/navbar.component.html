@@ -1,6 +1,15 @@
 <div class="main-nav-container back-color-gray1">
-  <div class="logo-container">
-    <div class="logo">
-    </div>
+  <img src="../../../../assets/img/Logo_menu.png" class="logo-container">
+  <div class="lenguajes-section bold text-color-gray5">
+    <p class="menu-component" routerLinkActive="text-color-blue" style="text-align: end">EN</p>
+    <p style="text-align: center">|</p>
+    <p class="menu-component" routerLinkActive="text-color-blue" style="text-align: start">ES</p>
   </div>
+
+  <div class="internal-menu book text-color-gray5">
+    <p [routerLink]="['inicio']" class="menu-component" routerLinkActive="text-color-blue">INICIO</p>
+    <P [routerLink]="['origenes']" class="menu-component" routerLinkActive="text-color-blue">ORÍGENES</P>
+    <P [routerLink]="['menu']" class="menu-component" routerLinkActive="text-color-blue">MENÚ</P>
+    <p [routerLink]="['contacto']" class="menu-component" routerLinkActive="text-color-blue">CONTACTO</p>
+  </div>  
 </div>
