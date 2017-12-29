@@ -34,3 +34,34 @@
 .light{
     font-family: "Light";
 }
+
+.back-color-green{
+    background-color: #BFE231;
+}
+.back-color-orange{
+    background-color: #F89A1C;
+}
+.back-color-brown{
+    background-color: #3f2d20;
+}
+.back-color-blue{
+    background-color: #55edeb;
+}
+.back-color-gray1{
+    background-color: #414042;
+}
+.back-color-gray2{
+    background-color: #6f6f6f;
+}
+.back-color-gray3{
+    background-color: #bcbec0;
+}
+.back-color-gray4{
+    background-color: #e6e7e8;
+}
+.back-color-gray5{
+    background-color: #fbfbfb;
+}
+.back-color-white{
+    background-color: #FFFFFF;
+}
