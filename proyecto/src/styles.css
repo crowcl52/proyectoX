@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family: "Black";
-    src: url(./assets/font/Gotham-Black.ttf);
+    font-family: "Bold";
+    src: url(./assets/font/Gotham-Bold.ttf);
 }
 
 @font-face {
@@ -19,8 +19,8 @@
     src: url(./assets/font/Gotham-Light.ttf);
 }
 
-.black{
-    font-family: "Black";
+.bold{
+    font-family: "Bold";
 }
 
 .book{
