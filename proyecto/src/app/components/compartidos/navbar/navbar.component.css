@@ -1,0 +1,7 @@
+.main-nav-container{
+    display: grid;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+}
