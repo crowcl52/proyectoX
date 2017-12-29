@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Black";
+    src: url(./assets/font/Gotham-Black.ttf);
+}
+
+@font-face {
+    font-family: "Book";
+    src: url(./assets/font/Gotham-Book.ttf);
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url(./assets/font/Gotham-Book.ttf);
+}
+
+@font-face {
+    font-family: "Light";
+    src: url(./assets/font/Gotham-Light.ttf);
+}
+
+.black{
+    font-family: "Black";
+}
+
+.book{
+    font-family: "Book";
+}
+
+.medium{
+    font-family: "Medium";
+}
+
+.light{
+    font-family: "Light";
+}
