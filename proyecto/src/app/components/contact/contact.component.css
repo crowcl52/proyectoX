@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    height: 530px;
+    align-items: center;
+}
+
+.header-img{
+    width: 50%;
+}
+
+
+.header-info{
+ display: flex;
+ font-size: 1.5rem;
+}
+p.bold{
+    margin: 0;
+}
+
+.line{
+    margin-right: 50px;
+    width: 5px;
+    height: 100px;
+    background-color: #414042;
+    border-radius: 30px;
+    align-self: center;
+}
