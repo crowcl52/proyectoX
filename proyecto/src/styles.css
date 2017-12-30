@@ -65,3 +65,34 @@
 .back-color-white{
     background-color: #FFFFFF;
 }
+
+.text-color-green{
+    color: #BFE231;
+}
+.text-color-orange{
+    color: #F89A1C;
+}
+.text-color-brown{
+    color: #3f2d20;
+}
+.text-color-blue{
+    color: #55edeb;
+}
+.text-color-gray1{
+    color: #414042;
+}
+.text-color-gray2{
+    color: #6f6f6f;
+}
+.text-color-gray3{
+    color: #bcbec0;
+}
+.text-color-gray4{
+    color: #e6e7e8;
+}
+.text-color-gray5{
+    color: #fbfbfb;
+}
+.text-color-white{
+    color: #FFFFFF;
+}
