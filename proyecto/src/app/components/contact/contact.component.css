@@ -6,6 +6,10 @@
     justify-content: space-between;
 }
 
+top30{
+    margin-top: 60px;
+}
+
 .header-img{
     width: 50%;   
 }
@@ -36,20 +40,87 @@ p.bold{
 
 .form{
     margin-top: 150px;
+    display: flex;
+    flex-flow: column;
+   align-items: center;
+    
+}
+
+.button-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.send-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
 }
 
 /* Diseño de botones */
 .button{
-    border: 1px solid #bcbec0;
-    color: #bcbec0;
-    background-color: #fff;
     text-transform: uppercase;
     padding: 10px 50px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-active{
+.muted{
+    border: 1px solid #bcbec0;
+    color: #bcbec0;
+    background-color: #fff;
+}
+
+.send{
+    border: 1px solid #f89a1c;
+    color: #fff;
+    background-color: #f89a1c;
+}
+
+.select{
+    border: 1px solid #BFE231;
     color: #fff;
     background-color: #BFE231;
-    
 }
+
+.section-two{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+.input-field{
+    width: 100%;
+}
+
+.short{
+    width: 45%;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #BFE231;
+  }
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #BFE231;
+    box-shadow: 0 1px 0 0 #BFE231;
+  }
+
+  /* label focus color */
+.input-field textarea:focus + label {
+    color: #BFE231;
+  }
+/* label underline focus color */
+.input-field textarea:focus {
+    border-bottom: 1px solid #BFE231;
+    box-shadow: 0 1px 0 0 #BFE231;
+  }

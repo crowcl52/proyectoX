@@ -9,6 +9,10 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
+  clientBtn = {select:true, muted:false};
+  busBtn =  {select:false, muted:true};
+  isClient:boolean = true;
+
   ngOnInit() {
   }
 
