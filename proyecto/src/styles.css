@@ -96,3 +96,8 @@
 .text-color-white{
     color: #FFFFFF;
 }
+
+
+.centrado_texto{
+    text-align: center;
+}

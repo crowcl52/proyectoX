@@ -4,6 +4,10 @@
 
 .estilo-titulos{
     font-size: 5rem;
+    margin: -10px;
+}
+.estilo-sub-titulos{
+    font-size: 3rem;
     margin: 0px;
 }
 .naranjazo{
@@ -14,10 +18,12 @@
     max-width: 300px;
 }
 
+/* Grid principal */
 .central-info{
     display: grid;
-    grid-template: 1fr 2fr 6fr 1fr /1fr 8fr 1fr;
+    grid-template: 1fr 1fr auto auto auto /1fr 8fr ;
 }
+
 .mainInfo{
     display: grid;
     grid-template: 1fr 1fr/1fr;
@@ -25,15 +31,261 @@
     grid-column-start: 2;
 }
 
-.central-info-position-a{
-grid-area: 1/1/1/3;
-}
 .central-info-detail{
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr /1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: .3fr  1fr /1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-start: 3;
     grid-column-start: 2;
 }
+
 .info-items-central-info{
     font-size: 1.5rem;
 }
+
+.central-info-position-a{
+    grid-area: 1/1/1/7;
+    /* margin: 0px; */
+}
+.central-info-position-b{
+    grid-area:2/1/2/7;
+    margin: 0px;
+}
+
+.frap_naranja_img{
+    grid-area: 2/1/4/8;
+    width: 100%;
+}
+
+/* Arma tu platillo */
+.contenedor-arma-platillo{
+    display: grid;
+    grid-template: 1fr 3fr/1fr;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+.titulo_arma_platillo{
+    display: grid;
+    grid-template: 1fr/1fr 3fr 1fr;
+}
+.titulo_arma_platillo_texto{
+    grid-column-start: 1;
+    grid-row-start: 1;   
+}
+.titulo_arma_platillo_borde_inferior{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    border-bottom: 2px solid #bcbec0;
+}
+
+.contenido_arma_platillo{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: grid;
+    grid-template: 1fr/ 1fr;
+}
+
+.imagen_arma_platillo{
+    margin-top: 25px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 100%;
+    visibility: hidden;
+}
+.contenidos_info_arma_platillo{
+    display: grid;
+    grid-template: 1fr/5% 1fr 1fr 1fr 1fr;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.first_menu_item_arma_platillo{
+    grid-column-start: 2;
+}
+
+.contenido_item_instruction_arma_platillo{
+    display: grid;
+    grid-template: 2fr 1fr 2fr/1fr;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.contenido_item_instruction_arma_platillo_imagen{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contenido_item_instruccion_arma_platillo_main_text{
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+.contenido_item_instruccion_arma_platillo_sub_text{
+    font-size: 1rem;
+    margin: auto;
+}
+
+
+/* Realiza tu platillo */
+.contenedor_realiza_platillo{
+    display: grid;
+    grid-template: 1fr 4fr 1fr/1fr 10fr;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-area: 5/1/5/3;
+    width: 100%;
+    /* height: 200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondo_contenedor_realiza_platillo{
+    grid-area: 1/1/3/3;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo_realiza_platillo_container{
+    display: grid;
+    grid-template: 1fr/1fr 4fr;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    margin: 0;
+}
+
+.titulo_realiza_platillo_texto{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    /* margin: auto; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-flow: column;
+}
+.titulo_realiza_platillo_borde_inf{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    border-bottom: 2px solid #fbfbfb;
+    width: 20%;
+    min-width: 200px;
+}
+.contenedor_interno_realiza_platillo{
+    display: grid;
+    grid-area: 2/2/4/2;
+    grid-template: 1fr/1fr 1fr;
+}
+.imagen_contenedor_realiza_platillo{
+    width: 100%;
+    margin: auto;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+/* mini formulario realiza platillo */
+
+.formulario_container_realiza_platillo{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-template: 1fr 1fr 1fr 1fr 2fr/ 1fr ;
+}
+
+.texto_principal_formulario_realiza_platillo{
+    font-size: 3rem;
+    margin: 15px;
+}
+
+.texto_secundario_formulario_realiza_platillo{
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.first_item_form_realiza_platillo{
+    display: flex;
+    align-items: flex-end;
+}
+.contenedor_botones{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton_base{
+    width: 35%;
+    min-width: 170px;
+    border-radius: 10px;
+    border: 1px solid #fbfbfb;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_relleno{
+    background-color: #fbfbfb;
+    color: #414042;
+}
+
+.boton_vacio{
+    color: #fbfbfb;
+}
+
+/* Se activa cuando pasa de 1366px */
+@media(min-width: 1366px){
+    .frap_naranja_img{
+        grid-area: 1/4/4/8;
+        width: 70%;
+    }
+
+    .central-info-position-a{
+        grid-area: 1/1/1/5;
+        /* margin: 0px; */
+    }
+    .central-info-position-b{
+        grid-area:2/1/2/5;
+        margin: 0px;
+    }
+    .imagen_arma_platillo{
+        margin-top: 25px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 100%;
+        visibility: visible;
+    }
+    .contenido_arma_platillo{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        display: grid;
+        grid-template: 1fr/ 1fr 3fr;
+    }
+    .contenidos_info_arma_platillo{
+        display: grid;
+        grid-template: 1fr/5% 1fr 1fr 1fr 5% 1fr;
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+}
+
+
+
+
+/*
+
+Test
+.image-a-central-info{
+    grid-area: 3/4/3/7;
+    width: 80%;
+}
+.image-b-central-info{
+    grid-area: 1/6/4/8;
+    width: 70%;
+}
+
+
+
+*/
