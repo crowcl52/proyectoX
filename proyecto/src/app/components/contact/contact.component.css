@@ -124,3 +124,7 @@ p.bold{
     border-bottom: 1px solid #BFE231;
     box-shadow: 0 1px 0 0 #BFE231;
   }
+
+  select{
+      color:#bcbec0;
+  }
