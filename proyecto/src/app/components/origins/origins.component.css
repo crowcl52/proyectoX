@@ -76,3 +76,10 @@
     background-color: #6f6f6f;
     align-self: flex-end;
 }
+
+.add{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

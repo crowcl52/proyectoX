@@ -16,4 +16,23 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  tipoCliente(tipo){
+
+    if(tipo == 1){
+
+      this.clientBtn = {select:true, muted:false};
+      this.busBtn =  {select:false, muted:true};
+      this.isClient = true;
+
+    }else{
+      this.clientBtn = {select:false, muted:true};
+      this.busBtn =  {select:true, muted:false};
+      this.isClient = false;
+      
+    }
+
+
+  }
+
 }

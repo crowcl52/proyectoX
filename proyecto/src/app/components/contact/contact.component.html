@@ -14,11 +14,11 @@
 </header>
 <section class="form">
   <div class="button-container">
-    <a [ngClass]="clientBtn" class="button bold"> soy persona </a>
-    <a [ngClass]="busBtn" class="button bold"> soy empresa </a>
+    <a (click)="tipoCliente(1)" [ngClass]="clientBtn" class="button bold"> soy persona </a>
+    <a (click)="tipoCliente(2)" [ngClass]="busBtn" class="button bold"> soy empresa </a>
   </div>
   <br><br>
-  <div *ngIf="isClient" class="contact-form">
+  <div  class="contact-form">
     <div class="input-field ">
         <input id="last_name" type="text" class="validate">
         <label for="last_name">Nombre</label>
@@ -41,13 +41,25 @@
             </div>
         </div>
       </div>
-
-      <select class="browser-default">
-          <option value="" disabled selected>Asunto</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select>
+      <!-- Select Empresa -->
+      <select *ngIf="!isClient" class="browser-default">
+        <option value="" disabled selected>Asunto</option>
+        <option value="1">Me gustaría ser proveedor de carne</option>
+        <option value="2">Me gustaría ser proveedor de pollo</option>
+        <option value="3">Me gustaría ser proveedor de pescado</option>
+        <option value="4">Me gustaría ser proveedor de fruta y verdura</option>
+        <option value="5">Me gustaría hacer una alianza</option>
+        <option value="6">Otro</option>
+      </select>
+      <!-- Select Persona -->
+      <select *ngIf="isClient" class="browser-default">
+        <option value="" disabled selected>Asunto</option>
+        <option value="1">Tengo una queja</option>
+        <option value="2">Tengo una sugerencia</option>
+        <option value="3">Me interesa una franquicia</option>
+        <option value="4">Me gustaría ser proveedor de mostrador</option>
+        <option value="5">Otro</option>
+      </select>
 
       <div class="input-field">
         <textarea id="textarea1" class="materialize-textarea"></textarea>
@@ -55,7 +67,7 @@
       </div>
 
       <div class="send-container">
-          <a class="button send bold"> soy persona </a>
+          <a class="button send bold"> Enviar </a>
         </div>
       
   </div>

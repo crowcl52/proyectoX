@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/compartidos/navbar/navbar.componen
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { OriginsComponent } from './components/origins/origins.component';
+import { FooterComponent } from './components/compartidos/footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { OriginsComponent } from './components/origins/origins.component';
     NavbarComponent,
     HomeComponent,
     ContactComponent,
-    OriginsComponent
+    OriginsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
